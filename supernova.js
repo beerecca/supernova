@@ -121,7 +121,19 @@
     });
   }
 
+  //Login page
+
+  function renameElements(){
+    //var remember = document.querySelector('label[for="Login_Remember"]');
+    console.log("test");
+    //remember.innerHTML = "Keep me signed in";
+    document.querySelector('label[for="Login_Remember"]').innerHTML = "Keep me signed in";
+    document.querySelector(`div [data-type="passwordlost"]`).innerHTML = "Forgot password?";
+
+  }
+
   setTimeout(() => {
+    renameElements();
     descriptiveClassNames();
 
     createMenu();
@@ -130,6 +142,7 @@
     iconRemove();
     renderName();
     cleanContent();
+
   }, 2000);
   setInterval(() => {
     unhideMenu();
