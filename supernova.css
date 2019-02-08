@@ -90,7 +90,7 @@ body {
 
 
 #Content  {
-  width: calc(100% - 240px);
+  width: calc(100vw - 300px);
   display: block;
   max-width: 1200px;
   margin: 30px 0 30px 270px !important;
