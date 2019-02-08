@@ -1,13 +1,14 @@
 {
-  "name": "Getting Started Example",
+  "name": "Supernova",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "description": "Let's make Nova a bit more usable",
   "options_page": "options.html",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "*://secure6.waytopay.nl/*"
+  ],
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -23,5 +24,20 @@
     "48": "images/get_started48.png",
     "128": "images/get_started128.png"
   },
-  "manifest_version": 2
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "*://secure6.waytopay.nl/*"
+      ],
+      "js": [
+        "supernova.js"
+      ],
+      "css": [
+        "supernova.css"
+      ]
+    }
+  ]
 }
+
+
