@@ -132,23 +132,29 @@
 
   }
 
-  setTimeout(() => {
+
+  if (window.location.href.indexOf("login") > -1) {
     renameElements();
-    descriptiveClassNames();
+  } else {
+    setTimeout(() => {
 
-    createMenu();
-    homePageCleanup();
+      descriptiveClassNames();
 
-    iconRemove();
-    renderName();
-    cleanContent();
+      createMenu();
+      homePageCleanup();
 
-  }, 2000);
-  setInterval(() => {
-    unhideMenu();
-    reflowContent();
-    navChecker();
-  }, 100);
+      iconRemove();
+      renderName();
+      cleanContent();
+
+    }, 2000);
+    setInterval(() => {
+      unhideMenu();
+      reflowContent();
+      navChecker();
+    }, 100);
+  }
+
 })();
 
 function unhideMenu() {
