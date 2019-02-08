@@ -5,33 +5,32 @@
     var menu = document.createElement('div');
     menu.classList.add('main_menu');
     console.log(menu);
-    // var main = document.querySelector('#Main');
-    // console.log(main);
-    // main.appendChild(menu);
-
-    // const logo = document.querySelector('#MainLogo');
-    // menu.appendChild
 
     const menuItems = document.querySelectorAll('.brick.size11');
     menuItems.forEach(item => {
       item.classList.remove('brick');
       item.classList.remove('size11');
-      item.removeAttribute("style")
-      menu.appendChild(item);
+      item.removeAttribute("style");
       console.log(item);
-    })
+    });
+
+    const bricks = document.querySelector('#Bricks');
+    bricks.removeAttribute("style");
+    bricks.classList.remove('free-wall');
+    menu.appendChild(bricks);
 
     const header = document.querySelector('#Header');
     header.appendChild(menu);
 
+    unWrap(document.querySelector('.size32'));
     document.querySelector('#MainLogo').remove();
   }
 
-  function htmlCleanup() {
+  function iconRemove() {
     const icons = document.querySelectorAll('.icon-box');
     icons.forEach(icon => {
       icon.remove();
-    })
+    });
   }
 
   function renderName() {
@@ -53,7 +52,8 @@
     unWrap(document.querySelector('#Header .clearfix'));
   }
 
-  function bigBrickCleanup() {
+  function homePageCleanup() {
+
     unWrap(document.querySelector('.size22'));
 
     const bigBricks = document.querySelectorAll('.brick.size21');
@@ -62,7 +62,7 @@
       brick.classList.remove('size21');
       brick.removeAttribute("style");
       brick.classList.add('block_container');
-    })
+    });
   }
 
   function descriptiveClassNames() {
@@ -75,12 +75,12 @@
         id: 'Brick_essverlofsaldo',
         className: 'block--leaveBalance'
       }
-    ]
+    ];
 
     classNames.forEach(item => {
       const el = document.body.querySelector(`div [data-id="${item.id}"]`);
       el.classList.add(item.className);
-    })
+    });
   }
 
   function unWrap(el){
@@ -93,9 +93,9 @@
     descriptiveClassNames();
 
     createMenu();
-    bigBrickCleanup();
+    homePageCleanup();
 
-    htmlCleanup();
+    iconRemove();
     renderName();
   }, 2000);
 })();

@@ -118,4 +118,45 @@ font-size: 14px;
   border: 1px solid #E9EBED;
   border-radius: 3px;
   padding: 20px;
+  margin-bottom: 20px;
+}
+
+.block_container .brick_content_header {
+  margin-bottom: 15px;
+}
+
+.block_container .brick_content_header .fa{
+  display: none;
+}
+
+.block--reports .brick_content_item {
+  color: #409fff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.block--reports .brick_content_item:hover {
+  color: #0037e5;
+}
+
+.block--reports .brick_content_item .fa {
+  display: none;
+}
+.block--leaveBalance .brick_content_row {}
+
+.block--leaveBalance .brick_content_row td{
+  font-family: Fakt Pro;
+  font-size: 14px;
+  color: #6A6D70;
+}
+
+.block--leaveBalance .brick_content_row td.rightalign {
+  font-weight: 500;
+  text-align: right;
+  color: #17181A;
+  padding: 0 !important;
+}
+
+.block--leaveBalance .brick_content_row td:last-of-type {
+  display: none;
 }
