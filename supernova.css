@@ -1,5 +1,32 @@
 body {
-  background: #F6F8F9 !important;
+  background-color: white;
+}
+
+.app-cross input{
+  border: 1px #e5e5e5 solid !important;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+
+.app-cross input[type="submit"]{
+  background: none !important;
+  border: none !important;
+
+}
+
+.submit{
+  background-color: #409fff;
+  border-radius: 10px;
+  height: 50px;
+}
+
+#LoginFrame{
+  background: none;
+}
+
+#LoginFrame input{
+  
 }
 
 
