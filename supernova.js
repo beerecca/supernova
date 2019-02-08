@@ -15,7 +15,7 @@
     });
 
     const bricks = document.querySelector('#Bricks');
-    bricks.removeAttribute("style");
+    // unhideMenu();
     // bricks.classList.remove('free-wall');
     menu.appendChild(bricks);
 
@@ -63,10 +63,15 @@
       brick.classList.remove('size21');
       brick.removeAttribute("style");
       brick.classList.add('block_container');
-
+      // brick.addEventListener('click', unhideMenu());
       // TEMP REMOVE
       brick.remove();
     });
+  }
+
+  function cleanContent() {
+    const content = document.querySelector('#Content');
+    content.removeAttribute("style");
   }
 
   function descriptiveClassNames() {
@@ -110,5 +115,19 @@
 
     iconRemove();
     renderName();
+    cleanContent();
   }, 2000);
+  setInterval(() => {
+    unhideMenu();
+    reflowContent();
+  }, 100);
 })();
+
+function unhideMenu() {
+  const bricks = document.querySelector('#Bricks');
+  bricks.removeAttribute("style");
+}
+function reflowContent() {
+  const content = document.querySelector('#Content');
+  content.removeAttribute("style");
+}
