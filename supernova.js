@@ -159,8 +159,8 @@
       renameElements();
     }, 150);
   } else {
+    hideSplash();
     setTimeout(() => {
-      hideSplash();
 
       descriptiveClassNames();
 
