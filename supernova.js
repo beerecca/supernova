@@ -16,13 +16,14 @@
 
     const bricks = document.querySelector('#Bricks');
     bricks.removeAttribute("style");
-    bricks.classList.remove('free-wall');
+    // bricks.classList.remove('free-wall');
     menu.appendChild(bricks);
 
     const header = document.querySelector('#Header');
     header.appendChild(menu);
 
-    unWrap(document.querySelector('.size32'));
+    unWrapMultiple(document.querySelectorAll('.size32'));
+    // unWrapMultiple(document.querySelectorAll('.size22'));
     document.querySelector('#MainLogo').remove();
   }
 
@@ -62,6 +63,9 @@
       brick.classList.remove('size21');
       brick.removeAttribute("style");
       brick.classList.add('block_container');
+
+      // TEMP REMOVE
+      brick.remove();
     });
   }
 
@@ -87,6 +91,15 @@
     var parent = el.parentNode;
     while (el.firstChild) parent.insertBefore(el.firstChild, el);
     parent.removeChild(el);
+  }
+
+
+  function unWrapMultiple(el) {
+    el.forEach(element => {
+      var parent = element.parentNode;
+      while (element.firstChild) parent.insertBefore(element.firstChild, element);
+      parent.removeChild(element);
+    });
   }
 
   setTimeout(() => {
