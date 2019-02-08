@@ -23,6 +23,11 @@
     "48": "images/supernova48.png",
     "128": "images/supernova128.png"
   },
+  "web_accessible_resources": [
+    "supernova.css",
+    "fonts/Fakt/FaktPro-Normal.ttf",
+    "fonts/Fakt/FaktPro-Medium.ttf"
+  ],
   "content_scripts": [
     {
       "run_at": "document_start",
