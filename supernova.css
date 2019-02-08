@@ -298,3 +298,72 @@ body:after {
 body.loaded:after{
   display: none;
 }
+
+/* LeavePage */
+
+.content {
+  background-color: transparent !important;
+  font-family: "Fakt Pro" !important;
+}
+
+.ui-widget {
+  font-family: "Fakt Pro" !important;
+}
+
+.ui-button.ui-widget {
+  font-weight: 500 !important;
+}
+
+.fa {
+  color: #409FFF;
+}
+
+.buttonblock .ui-button-text {
+  padding: 20px 18px;
+}
+
+.contentdata .FloatBlockHeader, 
+.dialogdata .FloatBlockHeader, 
+.contentdata .FloatBlockHeaderSmall {
+  background-color:#F6F8F9 !important;
+}
+
+.contentdata .FloatBlock, 
+.dialogdata .FloatBlock {
+  border-color: #E9EBED !important;
+}
+
+.contentdata table {
+  background-color: #FFFFFF !important;
+}
+
+.contentdata .FloatBlockHeaderTekst, 
+.contentdata .FloatBlockHeaderTekstSmall {
+  color: #17181A !important;
+  padding: 7px 0 12px 20px !important;
+  font-weight: 400;
+}
+
+.contentdata .FloatBlockHeader, 
+.dialogdata .FloatBlockHeader, 
+.contentdata .FloatBlockHeaderSmall {
+  height: auto !important;
+  border-bottom: 1px solid #E9EBED;
+}
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default {
+  background-color: rgba(64, 159, 255, 15%) !important;
+  border-color: #409FFF !important;
+  color: initial !important;
+  border-width: 1px !important;
+  border-radius: 3px;
+}
+
+.legenda {
+  display: none;
+}
+
+.contentdata tr:last-of-type td {
+  border-bottom: none;
+}
