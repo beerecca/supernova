@@ -18,6 +18,15 @@
 
     unWrapMultiple(document.querySelectorAll('.size32'));
     document.querySelector('#MainLogo').remove();
+
+    const logo = document.createElement('div');
+    logo.classList.add('wetransfer_logo');
+
+    header.appendChild(logo);
+
+    logo.addEventListener('click', function() {
+      document.querySelector('#back-button').click();
+    });
   }
 
   function iconRemove() {
@@ -129,7 +138,6 @@
     //remember.innerHTML = "Keep me signed in";
     document.querySelector('label[for="Login_Remember"]').innerHTML = "Keep me signed in";
     document.querySelector(`div [data-type="passwordlost"]`).innerHTML = "Forgot password?";
-
   }
 
 
