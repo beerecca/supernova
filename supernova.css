@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'fakt';
+  src: url('fonts/Fakt/FaktPro-Normal.ttf') format('truetype');
+}
+
+
 body {
   background-color: white;
 
@@ -37,6 +43,7 @@ box-sizing: border-box;
 #LoginFrame{
   background: none;
       font-size: 14px;
+      font-family: 'fakt', arial, sans-serif;
 }
 
 .app-cross h2{
