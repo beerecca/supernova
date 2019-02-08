@@ -88,25 +88,24 @@ body {
   cursor: pointer;
 }
 
-#Main {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100vw;
-  height: 100vh;
-}
 
 #Content  {
   width: calc(100% - 240px);
   display: block;
+  max-width: 1200px;
+  margin: 30px 0 30px 270px !important;
 }
 
 #Header {
   background: #fff;
   width: 220px;
   min-width: 220px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
   border-right: 1px solid #E6E8EA;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #Header_Account_Image {
