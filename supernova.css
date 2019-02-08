@@ -6,12 +6,23 @@ body {
   border: 1px #e5e5e5 solid !important;
     border-radius: 10px;
     margin: 5px 0;
+    height: 50px;
 }
 
 
 .app-cross input[type="submit"]{
   background: none !important;
   border: none !important;
+  padding: 3px 0px!important;
+  margin: 0;
+
+}
+
+.app-cross input[type="text"], .app-cross input[type="password"]{
+  background: none!important;
+  width: 100%!important;
+padding: 20px!important;
+box-sizing: border-box;
 
 }
 
@@ -19,15 +30,24 @@ body {
   background-color: #409fff;
   border-radius: 10px;
   height: 50px;
+  margin: 5px 0!important;
 }
 
 #LoginFrame{
   background: none;
 }
 
-#LoginFrame input{
-  
+.app-cross h2{
+  display:none;
 }
+
+.cross img {
+    height: auto!important;
+    max-width: 47.5%!important;
+    margin-bottom: 40px!important;
+  }
+
+
 
 
 .main_menu {
