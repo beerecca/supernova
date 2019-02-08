@@ -71,6 +71,10 @@ box-sizing: border-box;
     height: 13px;
   }
 
+  .copy-right p {
+    font-size: 14px!important;
+  }
+
 
 
 body {
