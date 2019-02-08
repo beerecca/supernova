@@ -1,5 +1,6 @@
 body {
   background-color: white;
+
 }
 
 .app-cross input{
@@ -35,6 +36,7 @@ box-sizing: border-box;
 
 #LoginFrame{
   background: none;
+      font-size: 14px;
 }
 
 .app-cross h2{
@@ -42,10 +44,16 @@ box-sizing: border-box;
 }
 
 .cross img {
-  height: auto!important;
-  max-width: 47.5%!important;
-  margin-bottom: 40px!important;
-}
+    height: auto!important;
+    max-width: 47.5%!important;
+    margin-bottom: 40px!important;
+  }
+
+  .remember input{
+    height: 13px;
+  }
+
+
 
 body {
   padding: 0 !important;
