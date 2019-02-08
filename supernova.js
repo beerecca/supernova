@@ -130,6 +130,10 @@
     });
   }
 
+  function hideSplash() {
+    document.body.classList.add('loaded');
+  }
+
   //Login page
 
   function renameElements(){
@@ -147,11 +151,14 @@
     }
   }
 
+
   if (window.location.href.indexOf("loggen") > -1) {
     setTimeout(() => {
+      hideSplash();
       renameElements();
     }, 150);
   } else {
+    hideSplash();
     setTimeout(() => {
 
       descriptiveClassNames();
