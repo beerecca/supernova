@@ -69,7 +69,7 @@ box-sizing: border-box;
 
 body {
   padding: 0 !important;
-  font-family: 'Fakt Pro';
+  font-family: 'Fakt Pro' !important;
 }
 .layout {
   margin: 0 !important;
@@ -177,15 +177,19 @@ font-size: 14px;
 .block--homepage {
   display: none;
   width: calc(100vw - 300px);
-  max-width: 1200px;
+  max-width: 750px;
   margin: 30px 0px 30px 270px !important;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 #Main.home .block--homepage{display: flex;}
 
-.block--homepage .block_container {
-  width: calc(50% - 60px);
+.block--homepage main {
+  width: calc(60% - 10px);
+}
+
+.block--homepage aside {
+  width: calc(40% - 10px);
 }
 
 .block_container {
@@ -194,14 +198,35 @@ font-size: 14px;
   border-radius: 3px;
   padding: 20px;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .block_container .brick_content_header {
-  margin-bottom: 15px;
+  font-size: 18px;
+  background: #F7F9FA;
+  border-bottom: 1px solid #E9EBED;
+  border-radius: 5px 5px 0px 0px;
+  padding: 20px;
+  margin: -20px -20px 15px -20px;
 }
 
 .block_container .brick_content_header .fa{
   display: none;
+}
+
+.block--intro p:first-of-type {
+  font-size: 18px;
+  font-weight: 500;
+  color: #17181A;
+  margin: 0 0 15px;
+}
+
+.block--intro p{
+  color: #6A6D70;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  display: block;
 }
 
 .block--reports .brick_content_item {

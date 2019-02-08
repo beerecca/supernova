@@ -46,12 +46,14 @@
   }
 
   function homePageCleanup() {
+    const homeBlock = document.createElement('div');
+    homeBlock.classList.add('block--homepage');
+
+    const SideColumn = document.createElement('aside');
+    const MainColumn = document.createElement('main');
 
     unWrap(document.querySelector('.size22'));
 
-    const homeBlock = document.createElement('div');
-    homeBlock.classList.add('block--homepage');
-    console.log(homeBlock);
 
     const bigBricks = document.querySelectorAll('.brick.size21');
     bigBricks.forEach(brick => {
@@ -59,8 +61,18 @@
       brick.classList.remove('size21');
       brick.removeAttribute('style');
       brick.classList.add('block_container');
-      homeBlock.appendChild(brick);
+      SideColumn.appendChild(brick);
     });
+
+    const introText = document.querySelector('.brick.size2-2');
+    introText.classList.remove('brick');
+    introText.classList.remove('size2-2');
+    introText.removeAttribute('style');
+    introText.classList.add('block_container');
+    MainColumn.appendChild(introText);
+
+    homeBlock.appendChild(MainColumn);
+    homeBlock.appendChild(SideColumn);
 
     const main = document.querySelector('#Main');
     main.appendChild(homeBlock);
@@ -81,6 +93,10 @@
       {
         id: 'Brick_essverlofsaldo',
         className: 'block--leaveBalance'
+      },
+      {
+        id: 'Brick_Intro',
+        className: 'block--intro'
       }
     ];
 
@@ -138,3 +154,4 @@ function navChecker() {
     document.querySelector('#Main').classList.add('home');
   }
 }
+
