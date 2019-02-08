@@ -87,7 +87,7 @@ body {
   margin: 0 30px;
 }
 .main_menu .read-more {
-  font-family: Fakt Pro;
+  font-family: 'Fakt Pro';
   font-style: normal;
   font-weight: normal;
   line-height: 32px;
@@ -132,7 +132,7 @@ body {
 }
 
 #Header_Account_Image span{
-font-family: Fakt Pro;
+font-family: 'Fakt Pro';
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -205,7 +205,7 @@ font-size: 14px;
 }
 
 .block--leaveBalance .brick_content_row td{
-  font-family: Fakt Pro;
+  font-family: 'Fakt Pro';
   font-size: 14px;
   color: #6A6D70;
 }
