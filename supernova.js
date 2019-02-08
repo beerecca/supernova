@@ -65,6 +65,24 @@
     })
   }
 
+  function descriptiveClassNames() {
+    const classNames = [
+      {
+        id: 'Brick_essrapport',
+        className: 'block--reports'
+      },
+      {
+        id: 'Brick_essverlofsaldo',
+        className: 'block--leaveBalance'
+      }
+    ]
+
+    classNames.forEach(item => {
+      const el = document.body.querySelector(`div [data-id="${item.id}"]`);
+      el.classList.add(item.className);
+    })
+  }
+
   function unWrap(el){
     var parent = el.parentNode;
     while (el.firstChild) parent.insertBefore(el.firstChild, el);
@@ -72,9 +90,12 @@
   }
 
   setTimeout(() => {
+    descriptiveClassNames();
+
     createMenu();
     bigBrickCleanup();
-  htmlCleanup();
-  renderName();
-}, 2000);
+
+    htmlCleanup();
+    renderName();
+  }, 2000);
 })();
