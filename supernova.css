@@ -1,3 +1,74 @@
 body {
   background: #F6F8F9 !important;
 }
+
+
+.main_menu {
+  margin: 0 30px;
+}
+.main_menu .read-more {
+  font-family: Fakt Pro;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  font-size: 14px;
+  color: #6A6D70;
+}
+
+.main_menu .read-more:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+
+#Header {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: #fff;
+  width: 220px;
+}
+
+#Header_Account_Image {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+
+}
+
+#Header_Account_Image span{
+font-family: Fakt Pro;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 14px;
+}
+
+#Header_Account_Image img{
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.Header_Account_Image_Arrow {
+  display: none;
+}
+
+
+#bricks {
+  display: none;
+}
+
+.free-wall {
+  position: absolute;
+  left: 260px;
+}
+
+.block_container {
+  background: #FFFFFF;
+  border: 1px solid #E9EBED;
+  border-radius: 3px;
+  padding: 20px;
+}
