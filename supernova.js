@@ -136,12 +136,11 @@
     document.querySelector('label[for="Login_Remember"]').innerHTML = "Keep me signed in";
     document.querySelector(`div [data-type="passwordlost"]`).innerHTML = "Forgot password?";
     document.querySelector(`div [data-function="Login"]`).value = "Sign in";
-    document.getElementById('Login_Password').value = "Password";
-    document.getElementById('Login_Naam').value = "Email";
+    document.getElementById('Login_Password').setAttribute('placeholder', 'Password')
+    document.getElementById('Login_Naam').setAttribute('placeholder', 'Email')
 
     var seperators = document.getElementsByClassName('remember');
     for(var i = 0; i < seperators.length; i++){
-      //console.log(seperators[i].innerHTML);
       if(seperators[i].innerHTML === "||"){
         seperators[i].innerHTML = "·";
       }
@@ -190,4 +189,3 @@ function navChecker() {
     document.querySelector('#Main').classList.add('home');
   }
 }
-
