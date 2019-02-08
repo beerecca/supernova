@@ -57,16 +57,22 @@
 
     unWrap(document.querySelector('.size22'));
 
+    const homeBlock = document.createElement('div');
+    homeBlock.classList.add('block--homepage');
+    console.log(homeBlock);
+
     const bigBricks = document.querySelectorAll('.brick.size21');
     bigBricks.forEach(brick => {
       brick.classList.remove('brick');
       brick.classList.remove('size21');
-      brick.removeAttribute("style");
+      brick.removeAttribute('style');
       brick.classList.add('block_container');
-      // brick.addEventListener('click', unhideMenu());
-      // TEMP REMOVE
-      brick.remove();
+      homeBlock.appendChild(brick);
     });
+
+    const main = document.querySelector('#Main');
+    main.appendChild(homeBlock);
+    console.log(main);
   }
 
   function cleanContent() {
@@ -120,6 +126,7 @@
   setInterval(() => {
     unhideMenu();
     reflowContent();
+    navChecker();
   }, 100);
 })();
 
@@ -130,4 +137,12 @@ function unhideMenu() {
 function reflowContent() {
   const content = document.querySelector('#Content');
   content.removeAttribute("style");
+}
+
+function navChecker() {
+  if (window.location.hash) {
+    document.querySelector('#Main').classList.remove('home');
+  } else {
+    document.querySelector('#Main').classList.add('home');
+  }
 }

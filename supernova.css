@@ -88,6 +88,10 @@ body {
   cursor: pointer;
 }
 
+.ui-widget-content {
+  border: 0 !important;
+}
+
 
 #Content  {
   width: calc(100vw - 300px);
@@ -142,6 +146,21 @@ font-size: 14px;
 .free-wall {
   position: absolute;
   left: 260px;
+}
+
+
+.block--homepage {
+  display: none;
+  width: calc(100vw - 300px);
+  max-width: 1200px;
+  margin: 30px 0px 30px 270px !important;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#Main.home .block--homepage{display: flex;}
+
+.block--homepage .block_container {
+  width: calc(50% - 60px);
 }
 
 .block_container {
