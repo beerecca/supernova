@@ -63,6 +63,9 @@
       brick.classList.remove('size21');
       brick.removeAttribute("style");
       brick.classList.add('block_container');
+
+      // TEMP REMOVE
+      brick.remove();
     });
   }
 

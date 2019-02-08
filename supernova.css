@@ -49,6 +49,11 @@ box-sizing: border-box;
 
 
 
+.free-wall {
+  left: 0 !important;
+  max-width: 160px;
+  padding: 0 30px;
+}
 
 .main_menu {
   margin: 0 30px;
