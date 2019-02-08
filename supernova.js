@@ -133,13 +133,20 @@
   //Login page
 
   function renameElements(){
-    //var remember = document.querySelector('label[for="Login_Remember"]');
-    console.log("test");
-    //remember.innerHTML = "Keep me signed in";
     document.querySelector('label[for="Login_Remember"]').innerHTML = "Keep me signed in";
     document.querySelector(`div [data-type="passwordlost"]`).innerHTML = "Forgot password?";
-  }
+    document.querySelector(`div [data-function="Login"]`).value = "Sign in";
+    document.getElementById('Login_Password').value = "Password";
+    document.getElementById('Login_Naam').value = "Email";
 
+    var seperators = document.getElementsByClassName('remember');
+    for(var i = 0; i < seperators.length; i++){
+      //console.log(seperators[i].innerHTML);
+      if(seperators[i].innerHTML === "||"){
+        seperators[i].innerHTML = "·";
+      }
+    }
+  }
 
   if (window.location.href.indexOf("login") > -1) {
     renameElements();

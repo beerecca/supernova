@@ -19,6 +19,8 @@ body {
     border-radius: 10px;
     margin: 5px 0;
     height: 50px;
+    font-size: 14px!important;
+
 }
 
 
@@ -31,7 +33,7 @@ body {
 }
 
 .app-cross input[type="text"], .app-cross input[type="password"]{
-  background: none!important;
+  background: white!important;
   width: 100%!important;
 padding: 20px!important;
 box-sizing: border-box;
@@ -43,6 +45,10 @@ box-sizing: border-box;
   border-radius: 10px;
   height: 50px;
   margin: 5px 0!important;
+}
+
+.submit input{
+  font-weight: bold!important;
 }
 
 #LoginFrame{
