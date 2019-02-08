@@ -148,8 +148,10 @@
     }
   }
 
-  if (window.location.href.indexOf("login") > -1) {
-    renameElements();
+  if (window.location.href.indexOf("loggen") > -1) {
+    setTimeout(() => {
+      renameElements();
+    }, 150);
   } else {
     setTimeout(() => {
 

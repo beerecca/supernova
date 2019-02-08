@@ -30,7 +30,7 @@
   ],
   "content_scripts": [
     {
-      "run_at": "document_start",
+      "run_at": "document_end",
       "matches": [
         "*://secure6.waytopay.nl/*",
         "*://secure.waytopay.nl/*"
