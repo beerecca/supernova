@@ -1,12 +1,16 @@
 @font-face {
-  font-family: 'fakt';
-  src: url('fonts/Fakt/FaktPro-Normal.ttf') format('truetype');
+  font-family: 'Fakt Pro';
+  font-weight: 400;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Fakt/FaktPro-Normal.ttf');
+}
+@font-face {
+  font-family: 'Fakt Pro';
+  font-weight: 500;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Fakt/FaktPro-Medium.ttf');
 }
 
-
 body {
-  background-color: white;
-
+  background-color: #F6F8F9 !important;
 }
 
 .app-cross input{
@@ -42,8 +46,8 @@ box-sizing: border-box;
 
 #LoginFrame{
   background: none;
-      font-size: 14px;
-      font-family: 'fakt', arial, sans-serif;
+  font-size: 14px;
+  font-family: 'Fakt Pro', arial, sans-serif !important;
 }
 
 .app-cross h2{
@@ -64,6 +68,7 @@ box-sizing: border-box;
 
 body {
   padding: 0 !important;
+  font-family: 'Fakt Pro';
 }
 .layout {
   margin: 0 !important;
@@ -155,7 +160,6 @@ font-size: 14px;
   left: 260px;
 }
 
-
 .block--homepage {
   display: none;
   width: calc(100vw - 300px);
@@ -199,7 +203,6 @@ font-size: 14px;
 .block--reports .brick_content_item .fa {
   display: none;
 }
-.block--leaveBalance .brick_content_row {}
 
 .block--leaveBalance .brick_content_row td{
   font-family: Fakt Pro;

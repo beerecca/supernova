@@ -1,29 +1,22 @@
 (function () {
-  console.log("It's aliiiiveeee!");
-
   function createMenu() {
     var menu = document.createElement('div');
     menu.classList.add('main_menu');
-    console.log(menu);
 
     const menuItems = document.querySelectorAll('.brick.size11');
     menuItems.forEach(item => {
       item.classList.remove('brick');
       item.classList.remove('size11');
       item.removeAttribute("style");
-      console.log(item);
     });
 
     const bricks = document.querySelector('#Bricks');
-    // unhideMenu();
-    // bricks.classList.remove('free-wall');
     menu.appendChild(bricks);
 
     const header = document.querySelector('#Header');
     header.appendChild(menu);
 
     unWrapMultiple(document.querySelectorAll('.size32'));
-    // unWrapMultiple(document.querySelectorAll('.size22'));
     document.querySelector('#MainLogo').remove();
   }
 
@@ -39,9 +32,8 @@
     nameDisplay.classList.add('name');
 
     const firstName = document.querySelector('#Header_Account_Name h2').textContent;
-    const lastName = document.querySelector('#Header_Account_Name h3').textContent;
     nameDisplay.innerText = firstName;
-    console.log(firstName, lastName);
+
     const imageContainer = document.querySelector('#Header_Account_Image');
     imageContainer.appendChild(nameDisplay);
     imageContainer.classList.remove('float-right');
