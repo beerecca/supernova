@@ -367,3 +367,14 @@ body.loaded:after{
 .contentdata tr:last-of-type td {
   border-bottom: none;
 }
+
+.contentdata .minus_2 {
+  background: #FFFFFF;
+}
+
+/* Loader */
+
+.Main_Loader, .Main_Loader_Show {
+  border: none !important;
+  background-color: transparent !important;
+}
