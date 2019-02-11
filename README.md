@@ -1,3 +1,4 @@
+![](https://github.com/beerecca/supernova/blob/master/images/supernova128.png)
 # Supernova
 This chrome extension is designed to improve the look and feel of the HR system Nova. All you need to do is add the extension and click on it to activate it!
 
