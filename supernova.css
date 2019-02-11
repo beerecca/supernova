@@ -95,6 +95,7 @@ body {
 }
 
 .main_menu {
+  flex-grow: 1;
   margin: 0 30px;
 }
 .main_menu .read-more {
@@ -150,7 +151,7 @@ body {
   width: 42px;
   height: 20px;
   background-size: cover;
-  margin: 0 30px 30px;
+  margin: 30px;
   cursor: pointer;
 }
 
@@ -200,7 +201,7 @@ font-size: 14px;
 .block--homepage {
   display: none;
   width: calc(100vw - 300px);
-  max-width: 750px;
+  max-width: 900px;
   margin: 30px 0px 30px 270px !important;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -322,13 +323,17 @@ body.loaded:after{
   padding: 20px 18px;
 }
 
-.contentdata .FloatBlockHeader, 
-.dialogdata .FloatBlockHeader, 
+.contentdata {
+  background: #fff;
+}
+
+.contentdata .FloatBlockHeader,
+.dialogdata .FloatBlockHeader,
 .contentdata .FloatBlockHeaderSmall {
   background-color:#F6F8F9 !important;
 }
 
-.contentdata .FloatBlock, 
+.contentdata .FloatBlock,
 .dialogdata .FloatBlock {
   border-color: #E9EBED !important;
 }
@@ -337,21 +342,21 @@ body.loaded:after{
   background-color: #FFFFFF !important;
 }
 
-.contentdata .FloatBlockHeaderTekst, 
+.contentdata .FloatBlockHeaderTekst,
 .contentdata .FloatBlockHeaderTekstSmall {
   color: #17181A !important;
   padding: 7px 0 12px 20px !important;
   font-weight: 400;
 }
 
-.contentdata .FloatBlockHeader, 
-.dialogdata .FloatBlockHeader, 
+.contentdata .FloatBlockHeader,
+.dialogdata .FloatBlockHeader,
 .contentdata .FloatBlockHeaderSmall {
   height: auto !important;
   border-bottom: 1px solid #E9EBED;
 }
 
-.ui-state-default, 
+.ui-state-default,
 .ui-widget-content .ui-state-default {
   background-color: rgba(64, 159, 255, 15%) !important;
   border-color: #409FFF !important;

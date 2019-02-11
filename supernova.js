@@ -52,6 +52,10 @@
 
     unWrap(document.querySelector('#Header .clearfix .float-right'));
     unWrap(document.querySelector('#Header .clearfix'));
+
+    setTimeout(() => {
+      unWrapMultiple(document.querySelectorAll('#Header .size22'));
+    }, 150);
   }
 
   function homePageCleanup() {
