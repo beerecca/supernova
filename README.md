@@ -11,7 +11,7 @@ This chrome extension is designed to improve the look and feel of the HR system 
 
 ## Installation
 _(Note: These instructions were copies from the Collect Chrome Extension beta release)_
-1. Download the zip-file
+1. Download the [zip-file](https://github.com/beerecca/supernova/archive/0.0.1.zip)
 2. Unpack the zip-file
 3. Navigate to: [chrome://extensions]() and turn on Developer mode
 4. Click ‘load unpacked’ and select the folder name 'supernova'
